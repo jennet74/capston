@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>화재 감지 모니터링 시스템</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="layout.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if lte IE 6]><style type="text/css">#hornav ul li, #hornav ul li a, #wrapper-content-1, #wrapper-content-2, #list-rss li a {height:1%;}</style><![endif]-->
+<!--[if lt IE 6]><style type="text/css">.vertnav a { width: 147px; }</style><![endif]-->
+</head>
+<body>
+<div id="wrapper-1">
+  <div id="page-top">&nbsp;</div>
+  <div id="branding">
+    <h1>화재 감지 모니터링 시스템</h1>
+  </div>
+  <div id="hornav">
+    <ul>
+      <li><a id="current" href="#">화재 감지 시스템</a></li>
+      <li><a href="monitoring.html">실시간 모니터링</a></li>
+      <li><a href="#">종합 데이터베이스</a></li>
+      <li><a href="manger.html">관리자 정보</a></li>
+    </ul>
+  </div>
+  <div id="wrapper-content-1">
+    <div id="content-1-left">
+      <h2 class="rounded-heading"><span>건물 구성도 및 감지 센서노드 위치</span></h2>
+      <div class="content-padder">
+        <p><a href="#"><img src="images/placeholder1.jpg" alt="" width="400" height="250" /></a></p>
+      </div>
+    </div>
+    <div id="content-1-right">
+      <h2 class="rounded-heading"><span>감지된 센서</span></h2>
+      <div class="content-padder">
+        <form action="proc_form.jmp">
+          <label for="Senser A"> Sensor A</label>
+          <input type="radio" name="sensor" id="Sensor A" value="Sensor A" ><br>
+          <label for="Senser B"> Sensor B</label>
+          <input type="radio" name="sensor" id="Sensor B" value="Sensor B" ><br>
+          <label for="Senser C"> Sensor C</label>
+          <input type="radio" name="sensor" id="Sensor C" value="Sensor C" ><br>
+          <label for="Senser D"> Sensor D</label>
+          <input type="radio" name="sensor" id="Sensor D" value="Sensor D" ><br>
+        </form>
+      </div>
+      <!--<div id="searchcontainer">
+        <div>
+          <form method="post" action="#">
+            <p>
+              <label for="keywords">Enter search term</label>
+              <input type="text" size="18" name="keywords" id="keywords" value="" />
+              <input type="image" name="submit" src="images/btn_go.jpg" alt="Search" title="Search" id="btn-search" />
+            </p>
+          </form>
+        </div>
+      </div>-->
+    </div>
+    <div id="content-1-bottom">&nbsp;</div>
+  </div>
+  <div id="wrapper-content-2">
+    <div id="content-2-1">
+      <h2 class="rounded-heading"><span>시설물 선택</span></h2>
+      <div class="content-padder">
+        <form action="">
+          <select name="facility">
+            <option value="건물 1층">건물 1층</option>
+            <option value="건물 2층">건물 2층</option>
+          </select>
+        </form>
+       </div>
+       <p>
+
+
+       <h2 class="rounded-heading"><span>센서 노드 선택</span></h2>
+       <div class="content-padder">
+         <form action="">
+           <select name="sensor node">
+             <option value="sensorA">Sensor A</option>
+             <option value="sensorB">Sensor B</option>
+             <option value="sensorC">Sensor C</option>
+             <option value="sensorD">Sensor D</option>
+           </select>
+         </form>
+        </div>
+      </p>
+    </div>
+    <div id="content-2-2">
+      <h2 class="rounded-heading"><span>제어 선택</span></h2>
+      <div class="content-padder">
+        <pre>
+<button type="button" onclick="alert('구동되었습니다.')">Start</button>
+
+
+
+<button type="button" onclick="alert('초기화 되었습니다.')">Reset</button>
+    </pre>
+      </div>
+    </div>
+    <div id="content-2-3">
+        <h2 class="rounded-heading"><span>Sensor 상태</span></h2>
+      <div class="content-padder">
+        </div>
+        <form>
+          연기감지 :
+          <input type="checkbox" name="select" value="유" checked >유
+          <input type="checkbox" name="select" value="무" checked >무
+        </form>
+    </div>
+    <div id="content-2-bottom">&nbsp;</div>
+  </div>
+</body>
+</html>
